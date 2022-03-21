@@ -8,6 +8,7 @@ namespace Business.Mapper
 {
     public class BookMapper
     {
+        //this method maps book to business logic
         public BookViewModel BookToBl(Book book)
         {
             BookViewModel model = new BookViewModel();
@@ -15,6 +16,7 @@ namespace Business.Mapper
             model.Author = book.Author;
 
             return model;
+
         }
     }
 }
